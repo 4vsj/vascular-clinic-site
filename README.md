@@ -1,11 +1,14 @@
-# Meridian Vascular Surgery — Website
+# Victorian Vascular and Vein Institute — Website
 
-A simple, responsive one-page website for a vascular surgery clinic, built with
-plain HTML, CSS, and a small amount of JavaScript. The colour theme is navy blue
-and white.
+A simple, responsive one-page website for the Victorian Vascular and Vein
+Institute (Dr Joy Wong), built with plain HTML, CSS, and a small amount of
+JavaScript. The colour theme is navy blue and white.
 
-> **Note:** All clinic details (name, doctors, phone, email, address) are
-> placeholders. Edit them in `index.html` to match your real clinic.
+**Clinic details**
+
+- Surgeon: Dr Joy Wong
+- Phone: (03) 9429 5955
+- Address: 158 Lennox Street, Richmond VIC 3121
 
 ## Files
 
@@ -14,6 +17,7 @@ and white.
 | `index.html` | Page content and structure |
 | `styles.css` | Navy & white theme and responsive layout |
 | `script.js` | Mobile menu toggle and footer year |
+| `images/` | Photo of Dr Joy Wong |
 
 ## View locally
 
@@ -30,9 +34,8 @@ This site is deployed with **GitHub Pages** from the `main` branch. Once Pages
 finishes building, it will be available at the URL shown in the repository's
 **Settings → Pages** section.
 
-## Things you'll likely want to change
+## Things you may still want to add
 
-- Clinic name and logo (`✚` mark) in the header and footer
-- The list of **Services**
-- **Team** member names, roles, and photos
-- **Contact** details and hooking the form up to a real email/booking service
+- A logo to replace the `✚` mark in the header and footer
+- An email address and opening hours (not currently listed)
+- Hooking the contact form up to a real email or booking service

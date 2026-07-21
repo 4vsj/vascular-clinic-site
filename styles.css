@@ -177,6 +177,24 @@ a:hover { text-decoration: underline; }
 .team-card .role { color: var(--accent); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.6rem; }
 .team-card p { color: var(--muted); margin: 0; }
 
+/* Surgeon (single) */
+.surgeon {
+  display: grid; gap: 2rem; align-items: center; max-width: 900px;
+  margin: 2.5rem auto 0;
+}
+.surgeon-photo img {
+  display: block; width: 100%; height: auto; border-radius: var(--radius);
+  box-shadow: var(--shadow); border: 4px solid #fff; outline: 1px solid var(--line);
+}
+.surgeon-bio h3 { font-size: 1.6rem; margin-bottom: 0.15rem; }
+.surgeon-bio .role { color: var(--accent); font-weight: 600; margin-bottom: 1rem; }
+.surgeon-bio p { color: var(--muted); }
+.surgeon-bio .btn { margin-top: 0.75rem; }
+
+@media (min-width: 720px) {
+  .surgeon { grid-template-columns: 320px 1fr; align-items: start; }
+}
+
 /* Contact */
 .section-navy { background: linear-gradient(160deg, var(--navy-deep), var(--navy)); color: #fff; }
 .section-navy .section-title.light, .section-navy .light { color: #fff; }
