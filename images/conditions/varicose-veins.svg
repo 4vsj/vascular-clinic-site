@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Diagram of a leg showing tortuous varicose veins and a cluster of spider veins">
+  <rect width="400" height="240" fill="#eef3fa"/>
+  <!-- leg -->
+  <path d="M150 20 q-18 60 -8 120 q8 50 -6 82 h70 q10 -46 4 -86 q-8 -58 8 -116 z" fill="#f7fafd" stroke="#0a2a52" stroke-width="3"/>
+  <!-- healthy vein hint -->
+  <path d="M168 30 q-6 90 2 180" fill="none" stroke="#9cb6da" stroke-width="3" stroke-linecap="round"/>
+  <!-- varicose vein, tortuous & bulging -->
+  <path d="M150 34 q30 24 4 48 q-30 22 2 46 q30 22 -2 46 q-28 22 6 52"
+        fill="none" stroke="#3a2d6b" stroke-width="9" stroke-linecap="round"/>
+  <path d="M150 34 q30 24 4 48 q-30 22 2 46 q30 22 -2 46 q-28 22 6 52"
+        fill="none" stroke="#5a4a9c" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <!-- spider veins cluster -->
+  <g stroke="#b3468a" stroke-width="1.6" stroke-linecap="round" opacity="0.85">
+    <line x1="196" y1="150" x2="212" y2="140"/>
+    <line x1="196" y1="150" x2="214" y2="156"/>
+    <line x1="196" y1="150" x2="206" y2="166"/>
+    <line x1="196" y1="150" x2="184" y2="162"/>
+    <line x1="196" y1="150" x2="182" y2="142"/>
+    <line x1="212" y1="140" x2="222" y2="134"/>
+    <line x1="214" y1="156" x2="226" y2="160"/>
+  </g>
+  <text x="200" y="224" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#0a2a52" font-weight="700">Varicose &amp; spider veins</text>
+</svg>

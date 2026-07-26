@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Diagram of a deep vein blocked by a blood clot (thrombus)">
+  <rect width="400" height="240" fill="#eef3fa"/>
+  <!-- vein segment -->
+  <rect x="40" y="80" width="320" height="72" rx="36" fill="#f7fafd" stroke="#0a2a52" stroke-width="3"/>
+  <!-- flowing blood before clot -->
+  <rect x="52" y="98" width="120" height="36" rx="18" fill="#2f6fd0" opacity="0.3"/>
+  <!-- clot / thrombus blocking the vein -->
+  <g>
+    <ellipse cx="230" cy="116" rx="52" ry="30" fill="#8f2f3a"/>
+    <circle cx="210" cy="106" r="8" fill="#a83f4a"/>
+    <circle cx="238" cy="102" r="10" fill="#a83f4a"/>
+    <circle cx="250" cy="126" r="9" fill="#a83f4a"/>
+    <circle cx="220" cy="128" r="7" fill="#a83f4a"/>
+  </g>
+  <!-- valve hint -->
+  <path d="M300 84 q8 22 0 44 M320 84 q-8 22 0 44" fill="none" stroke="#9cb6da" stroke-width="3"/>
+  <text x="230" y="192" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8f2f3a" font-weight="700">Clot blocks blood flow</text>
+  <text x="200" y="224" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#0a2a52" font-weight="700">Deep vein thrombosis</text>
+</svg>

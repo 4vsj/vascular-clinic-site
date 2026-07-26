@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Diagram of an aorta with a balloon-like aneurysm bulge in the vessel wall">
+  <rect width="400" height="240" fill="#eef3fa"/>
+  <!-- aorta: arch down into abdominal aorta with a bulge -->
+  <path d="M150 24
+           q60 0 60 60
+           l0 30
+           q40 4 40 40
+           q0 36 -40 40
+           l0 26
+           l-40 0
+           l0 -26
+           q-30 -6 -30 -40
+           q0 -34 30 -40
+           l0 -30
+           q0 -20 -20 -20
+           l-40 0
+           l0 -40 z"
+        fill="#dbe6f6" stroke="#0a2a52" stroke-width="3"/>
+  <!-- blood flow channel -->
+  <path d="M150 44 q40 0 40 40 l0 40 q30 4 30 34 q0 30 -30 34 l0 32 l-16 0"
+        fill="none" stroke="#2f6fd0" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+  <!-- aneurysm highlight ring -->
+  <circle cx="196" cy="158" r="46" fill="none" stroke="#d64545" stroke-width="3" stroke-dasharray="6 6"/>
+  <text x="266" y="150" font-family="system-ui, sans-serif" font-size="12" fill="#d64545" font-weight="700">Bulge</text>
+  <text x="200" y="228" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#0a2a52" font-weight="700">Aortic aneurysm</text>
+</svg>

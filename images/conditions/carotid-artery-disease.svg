@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Diagram of a carotid artery branching in the neck with plaque narrowing at the fork">
+  <rect width="400" height="240" fill="#eef3fa"/>
+  <!-- common carotid rising then splitting into two branches -->
+  <path d="M150 210 l40 0 l0 -70 q0 -30 26 -50 l24 -18 l24 30 l-24 18 q-10 8 -10 22 l0 68 l-40 0 z"
+        fill="#dbe6f6" stroke="#0a2a52" stroke-width="3"/>
+  <path d="M190 140 q0 -34 -26 -54 l-24 -18 l-24 30 l24 18 q10 8 10 22"
+        fill="#dbe6f6" stroke="#0a2a52" stroke-width="3"/>
+  <!-- flow channels -->
+  <path d="M170 206 l0 -66 q0 -22 18 -38" fill="none" stroke="#2f6fd0" stroke-width="6" opacity="0.5" stroke-linecap="round"/>
+  <path d="M170 140 q0 -22 -18 -38" fill="none" stroke="#2f6fd0" stroke-width="6" opacity="0.5" stroke-linecap="round"/>
+  <!-- plaque at the bifurcation -->
+  <ellipse cx="170" cy="150" rx="20" ry="14" fill="#d6a545" stroke="#a97e28" stroke-width="2"/>
+  <circle cx="170" cy="150" r="6" fill="#d64545"/>
+  <text x="200" y="228" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#0a2a52" font-weight="700">Carotid artery disease</text>
+</svg>

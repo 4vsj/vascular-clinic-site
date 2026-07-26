@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Cross-section of an artery narrowed by plaque, reducing blood flow">
+  <rect width="400" height="240" fill="#eef3fa"/>
+  <!-- artery wall -->
+  <rect x="40" y="70" width="320" height="90" rx="45" fill="#f7fafd" stroke="#0a2a52" stroke-width="3"/>
+  <!-- open lumen (healthy flow) -->
+  <rect x="52" y="92" width="120" height="46" rx="23" fill="#2f6fd0" opacity="0.28"/>
+  <!-- plaque narrowing -->
+  <path d="M180 82 q40 6 60 33 q-20 27 -60 33 q-30 -33 0 -66 z" fill="#d6a545" stroke="#a97e28" stroke-width="2"/>
+  <path d="M180 158 q40 -6 60 -33 q-20 -27 -60 -33 q-30 33 0 66 z" fill="#d6a545" stroke="#a97e28" stroke-width="2"/>
+  <!-- restricted flow through narrowing -->
+  <rect x="215" y="110" width="130" height="10" rx="5" fill="#d64545"/>
+  <!-- flow arrows -->
+  <g fill="#2f6fd0">
+    <path d="M70 115 l14 0 l0 -6 l12 9 l-12 9 l0 -6 l-14 0 z"/>
+  </g>
+  <text x="200" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#a97e28" font-weight="700">Plaque narrows the artery</text>
+  <text x="200" y="224" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#0a2a52" font-weight="700">Peripheral artery disease</text>
+</svg>
