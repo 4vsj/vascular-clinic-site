@@ -291,6 +291,23 @@ a:hover { color: var(--navy-700); }
   outline: none; border-color: var(--brass); box-shadow: 0 0 0 3px rgba(176, 137, 74, 0.16);
 }
 
+/* Call-to-book card */
+.call-card {
+  background: #fff; border-radius: var(--radius-lg); padding: 2.2rem 1.9rem;
+  color: var(--ink); box-shadow: var(--shadow-md); text-align: center;
+}
+.call-label {
+  text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.72rem;
+  font-weight: 600; color: var(--brass); margin: 0 0 0.5rem;
+}
+.call-number {
+  display: block; font-family: var(--serif); font-weight: 500;
+  font-size: clamp(2rem, 8vw, 2.6rem); color: var(--navy); letter-spacing: -0.01em;
+  margin-bottom: 1.3rem; line-height: 1.1;
+}
+.call-number:hover { color: var(--navy-700); }
+.call-note { margin: 1.3rem 0 0; font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
+
 /* ---------- Footer ---------- */
 .site-footer { background: var(--navy-deep); color: #a9bdd4; padding: clamp(2.5rem, 5vw, 3.5rem) 0 2rem; border-top: 1px solid rgba(255, 255, 255, 0.08); }
 .footer-grid { display: grid; gap: 2rem; padding-bottom: 2rem; }
@@ -326,8 +343,28 @@ a:hover { color: var(--navy-700); }
   }
   .nav-menu.open { display: flex; }
   .nav-menu li { padding: 0.5rem 0; }
-  .nav-cta { text-align: center; margin-top: 0.6rem; }
+  .nav-menu a.nav-cta { text-align: center; margin-top: 0.6rem; }
   .hero-portrait { margin-top: 0.5rem; max-width: 340px; }
+}
+
+/* Mobile-first refinements: bigger tap targets, full-width actions */
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .container { padding: 0 1.15rem; }
+  .btn { padding: 0.95rem 1.4rem; font-size: 1rem; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { width: 100%; text-align: center; }
+  .hero .lead { max-width: none; }
+  .hero-portrait { max-width: 300px; }
+  .cards { grid-template-columns: 1fr; }
+  .surgeon-photo { max-width: 300px; }
+  .section-head { margin-bottom: 2.2rem; }
+  .contact-list a, .contact-list span { font-size: 1rem; }
+}
+
+/* Comfortable tap targets on any touch device */
+@media (hover: none) {
+  .nav-menu a, .footer-col a, .contact-list a { padding-top: 0.35rem; padding-bottom: 0.35rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

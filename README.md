@@ -1,8 +1,9 @@
 # Victorian Vascular and Vein Institute — Website
 
-A simple, responsive one-page website for the Victorian Vascular and Vein
+A responsive, mobile-first one-page website for the Victorian Vascular and Vein
 Institute (Dr Joy Wong), built with plain HTML, CSS, and a small amount of
-JavaScript. The colour theme is navy blue and white.
+JavaScript. Navy-and-white theme with a brass accent, Fraunces + Inter type.
+Booking is by phone: every "book" button is a click-to-call link.
 
 **Clinic details**
 
@@ -17,7 +18,8 @@ JavaScript. The colour theme is navy blue and white.
 | `index.html` | Page content and structure |
 | `styles.css` | Navy & white theme and responsive layout |
 | `script.js` | Mobile menu toggle and footer year |
-| `images/` | Photo of Dr Joy Wong |
+| `images/dr-joy-wong.png` | Portrait of Dr Joy Wong |
+| `images/conditions/` | SVG diagrams, one per condition |
 
 ## View locally
 
@@ -36,6 +38,6 @@ finishes building, it will be available at the URL shown in the repository's
 
 ## Things you may still want to add
 
-- A logo to replace the `✚` mark in the header and footer
-- An email address and opening hours (not currently listed)
-- Hooking the contact form up to a real email or booking service
+- Opening hours (not currently listed)
+- Real professional qualifications / fellowships for Dr Wong
+- A brand logo to replace the built-in ECG monogram, if preferred
