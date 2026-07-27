@@ -57,8 +57,10 @@ This site is deployed with **GitHub Pages** from the `main` branch. Once Pages
 finishes building, it will be available at the URL shown in the repository's
 **Settings → Pages** section.
 
-## Things you may still want to add
+## Things you may still want to add / check
 
 - Opening hours (not currently listed)
 - Real professional qualifications / fellowships for Dr Wong
 - A brand logo to replace the built-in ECG monogram, if preferred
+- **Review the FAQ answers** in `index.html` (`id="faq"`) — the Medicare/costs
+  and location/parking wording is general; adjust it to your clinic's specifics.

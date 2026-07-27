@@ -71,6 +71,59 @@ function showBookingStatus(form, message, isError) {
   status.classList.toggle('is-error', !!isError);
 }
 
+// Header shadow on scroll
+const header = document.querySelector('.site-header');
+if (header) {
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+// Back-to-top button
+const toTop = document.createElement('button');
+toTop.className = 'to-top';
+toTop.type = 'button';
+toTop.setAttribute('aria-label', 'Back to top');
+toTop.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+document.body.appendChild(toTop);
+toTop.addEventListener('click', () => {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+});
+window.addEventListener('scroll', () => {
+  toTop.classList.toggle('show', window.scrollY > 500);
+}, { passive: true });
+
+// Scroll reveal (progressive enhancement — content is visible without JS)
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reduceMotion && 'IntersectionObserver' in window) {
+  const selectors = [
+    '.section-head', '.card', '.feature-list > li', '.exp-list > li',
+    '.faq-item', '.about-lead', '.surgeon-photo', '.surgeon-bio',
+    '.contact-info', '.booking-form', '.condition-content'
+  ];
+  const revealEls = [];
+  selectors.forEach((sel) => document.querySelectorAll(sel).forEach((el) => revealEls.push(el)));
+  revealEls.forEach((el) => el.classList.add('reveal'));
+
+  // Gentle stagger within card / list groups
+  document.querySelectorAll('.cards, .feature-list, .exp-list, .faq').forEach((group) => {
+    Array.from(group.children).forEach((child, i) => {
+      if (child.classList.contains('reveal')) child.style.transitionDelay = Math.min(i, 5) * 70 + 'ms';
+    });
+  });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach((el) => io.observe(el));
+}
+
 document.querySelectorAll('.booking-form').forEach((form) => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();

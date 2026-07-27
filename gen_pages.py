@@ -54,6 +54,7 @@ HEAD = """<!DOCTYPE html>
             </div>
           </li>
           <li><a href="about.html">About</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
           <li><a href="index.html#contact">Contact</a></li>
           <li><a class="nav-cta" href="#book">Book a consultation</a></li>
         </ul>
