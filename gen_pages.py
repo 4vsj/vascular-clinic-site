@@ -39,7 +39,20 @@ HEAD = """<!DOCTYPE html>
           <span class="nav-bars" aria-hidden="true"></span>
         </button>
         <ul id="nav-menu" class="nav-menu">
-          <li><a href="index.html#services">Conditions</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#services" class="nav-drop-toggle">Conditions <span class="caret" aria-hidden="true">&#9662;</span></a>
+            <div class="dropdown-panel">
+              <div class="container dropdown-row">
+                <a href="varicose-veins.html">Varicose &amp; Spider Veins</a>
+                <a href="peripheral-artery-disease.html">Peripheral Artery Disease</a>
+                <a href="aortic-aneurysm.html">Aortic Aneurysm Care</a>
+                <a href="carotid-artery-disease.html">Carotid Artery Disease</a>
+                <a href="deep-vein-thrombosis.html">Deep Vein Thrombosis</a>
+                <a href="dialysis-access.html">Dialysis Access</a>
+              </div>
+            </div>
+          </li>
           <li><a href="about.html">About</a></li>
           <li><a href="index.html#contact">Contact</a></li>
           <li><a class="nav-cta" href="#book">Book a consultation</a></li>
