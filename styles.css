@@ -222,6 +222,27 @@ a:hover { color: var(--navy-700); }
   color: var(--navy); margin: 0 0 1.6rem; padding-left: 1.3rem; border-left: 3px solid var(--brass);
 }
 
+/* ---------- Experience / credentials ---------- */
+.experience { margin-top: clamp(2.5rem, 5vw, 4rem); }
+.experience > h3 {
+  font-family: var(--sans); text-transform: uppercase; letter-spacing: 0.14em;
+  font-size: 0.78rem; color: var(--muted); font-weight: 600; margin-bottom: 0.5rem;
+}
+.exp-list { list-style: none; margin: 0; padding: 0; }
+.exp-list li {
+  display: grid; grid-template-columns: 150px 1fr; gap: 0.15rem 1.5rem;
+  padding: 1rem 0; border-top: 1px solid var(--line); align-items: baseline;
+}
+.exp-list li:last-child { border-bottom: 1px solid var(--line); }
+.exp-date { font-size: 0.85rem; font-weight: 600; color: var(--brass); letter-spacing: 0.02em; }
+.exp-role { font-weight: 600; color: var(--navy); }
+.exp-place { grid-column: 2; color: var(--muted); font-size: 0.95rem; }
+
+@media (max-width: 560px) {
+  .exp-list li { grid-template-columns: 1fr; gap: 0.1rem; }
+  .exp-place { grid-column: 1; }
+}
+
 /* ---------- Approach (real sequence -> numbered) ---------- */
 .about-grid { display: grid; gap: clamp(2rem, 5vw, 3.5rem); }
 .about-lead { max-width: 34rem; }
