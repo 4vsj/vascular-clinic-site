@@ -235,6 +235,81 @@ a:hover { color: var(--navy-700); }
 .modal-note { margin: 1rem 0 0; font-size: 0.88rem; color: var(--muted); }
 body.modal-open { overflow: hidden; }
 
+/* ---------- Card as link ---------- */
+.card { text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+.card:hover { text-decoration: none; }
+.card .card-body { display: flex; flex-direction: column; flex: 1 1 auto; }
+.card .card-cta { margin-top: auto; padding-top: 1rem; }
+.card:hover .card-cta span { transform: translateX(3px); }
+
+/* ---------- Condition page ---------- */
+.page-hero {
+  background: var(--paper); border-bottom: 1px solid var(--line);
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(1.8rem, 4vw, 2.6rem);
+}
+.breadcrumb { display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: 0.85rem; color: var(--muted); margin-bottom: 1.25rem; }
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--navy); }
+.breadcrumb [aria-current] { color: var(--navy); font-weight: 600; }
+.page-hero h1 { font-size: clamp(2.1rem, 5vw, 3.3rem); margin-bottom: 0.5rem; }
+.page-lead { font-size: 1.15rem; color: var(--muted); max-width: 60ch; margin: 0; }
+
+.condition-layout { display: grid; gap: clamp(2rem, 5vw, 3.5rem); align-items: start; }
+.condition-content { max-width: 70ch; }
+.condition-hero-img {
+  display: block; width: 100%; height: auto; aspect-ratio: 400 / 240; object-fit: cover;
+  border-radius: var(--radius-lg); border: 1px solid var(--line); background: #eef3fa; margin-bottom: 2rem;
+}
+.condition-content h2 {
+  font-family: var(--serif); font-weight: 500; font-size: clamp(1.4rem, 3vw, 1.85rem);
+  margin: 2rem 0 0.6rem;
+}
+.condition-content p { color: var(--ink); }
+.cond-list { list-style: none; margin: 0 0 1rem; padding: 0; }
+.cond-list li { position: relative; padding-left: 1.6rem; margin-bottom: 0.5rem; color: var(--ink); }
+.cond-list li::before {
+  content: ""; position: absolute; left: 0; top: 0.62em; width: 7px; height: 7px;
+  border-radius: 50%; background: var(--brass);
+}
+.disclaimer {
+  margin-top: 2rem; padding: 1rem 1.2rem; background: var(--paper);
+  border-left: 3px solid var(--brass); border-radius: 0 8px 8px 0;
+  font-size: 0.9rem; color: var(--muted);
+}
+.ba-figure { margin: 1.5rem 0 0.5rem; }
+.ba-figure img { width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
+.ba-figure figcaption { margin-top: 0.6rem; font-size: 0.85rem; color: var(--muted); }
+
+/* ---------- Booking form ---------- */
+.booking-aside { position: static; }
+.booking-form {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: clamp(1.4rem, 3vw, 1.9rem); box-shadow: var(--shadow-md);
+}
+.booking-title { font-family: var(--serif); font-weight: 500; font-size: clamp(1.35rem, 3vw, 1.7rem); margin: 0 0 0.3rem; }
+.booking-sub { font-size: 0.92rem; color: var(--muted); margin: 0 0 1.3rem; }
+.booking-regarding {
+  font-size: 0.88rem; color: var(--muted); margin: 0 0 1.1rem;
+  padding: 0.6rem 0.85rem; background: var(--paper); border-radius: 8px;
+}
+.booking-regarding strong { color: var(--navy); }
+.field-row { display: grid; gap: 1rem; }
+.booking-alt { margin: 1rem 0 0; font-size: 0.9rem; color: var(--muted); text-align: center; }
+.booking-alt a { font-weight: 600; }
+.booking-status {
+  margin: 1rem 0 0; padding: 0.8rem 1rem; border-radius: 8px;
+  background: #eaf4ec; color: #1f5130; font-size: 0.92rem;
+}
+.booking-status.is-error { background: #fdecec; color: #8f2f3a; }
+
+@media (min-width: 480px) {
+  .field-row { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 900px) {
+  .condition-layout { grid-template-columns: 1fr 380px; }
+  .booking-aside { position: sticky; top: 96px; }
+}
+
 /* ---------- Surgeon ---------- */
 .surgeon { display: grid; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
 .surgeon-photo { position: relative; margin: 0; max-width: 380px; width: 100%; justify-self: center; }
