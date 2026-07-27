@@ -13,6 +13,5 @@
   <g fill="#2f6fd0">
     <path d="M70 115 l14 0 l0 -6 l12 9 l-12 9 l0 -6 l-14 0 z"/>
   </g>
-  <text x="200" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#a97e28" font-weight="700">Plaque narrows the artery</text>
-  <text x="200" y="224" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#0a2a52" font-weight="700">Peripheral artery disease</text>
+  <text x="200" y="205" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#a97e28" font-weight="700">Plaque narrows the artery</text>
 </svg>

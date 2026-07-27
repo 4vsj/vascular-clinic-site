@@ -21,6 +21,5 @@
         fill="none" stroke="#2f6fd0" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
   <!-- aneurysm highlight ring -->
   <circle cx="196" cy="158" r="46" fill="none" stroke="#d64545" stroke-width="3" stroke-dasharray="6 6"/>
-  <text x="266" y="150" font-family="system-ui, sans-serif" font-size="12" fill="#d64545" font-weight="700">Bulge</text>
-  <text x="200" y="228" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#0a2a52" font-weight="700">Aortic aneurysm</text>
+  <text x="264" y="150" font-family="system-ui, sans-serif" font-size="13" fill="#d64545" font-weight="700">Bulge</text>
 </svg>

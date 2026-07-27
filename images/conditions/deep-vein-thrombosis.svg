@@ -14,6 +14,5 @@
   </g>
   <!-- valve hint -->
   <path d="M300 84 q8 22 0 44 M320 84 q-8 22 0 44" fill="none" stroke="#9cb6da" stroke-width="3"/>
-  <text x="230" y="192" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8f2f3a" font-weight="700">Clot blocks blood flow</text>
-  <text x="200" y="224" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#0a2a52" font-weight="700">Deep vein thrombosis</text>
+  <text x="230" y="196" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#8f2f3a" font-weight="700">Clot blocks blood flow</text>
 </svg>

@@ -11,5 +11,5 @@
   <!-- plaque at the bifurcation -->
   <ellipse cx="170" cy="150" rx="20" ry="14" fill="#d6a545" stroke="#a97e28" stroke-width="2"/>
   <circle cx="170" cy="150" r="6" fill="#d64545"/>
-  <text x="200" y="228" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#0a2a52" font-weight="700">Carotid artery disease</text>
+  <text x="196" y="150" font-family="system-ui, sans-serif" font-size="13" fill="#a97e28" font-weight="700">Plaque</text>
 </svg>

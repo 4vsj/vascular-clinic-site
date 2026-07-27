@@ -6,6 +6,8 @@
   <meta name="description" content="Victorian Vascular and Vein Institute — Dr Joy Wong provides expert diagnosis and treatment of vascular and vein conditions in Richmond, Melbourne." />
   <title>Victorian Vascular and Vein Institute — Dr Joy Wong</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,9 +15,17 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">✚</span>
-        <span class="brand-text">Victorian Vascular <strong>&amp; Vein</strong></span>
+      <a class="brand" href="#top" aria-label="Victorian Vascular and Vein Institute home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="38" height="38">
+            <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M7 21 h6 l3 -8 l4 15 l3 -9 l2 3 h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Victorian Vascular <span class="amp">&amp;</span> Vein</span>
+          <span class="brand-sub">Institute · Dr Joy Wong</span>
+        </span>
       </a>
       <nav class="nav" aria-label="Primary">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
@@ -23,11 +33,11 @@
           <span class="nav-bars" aria-hidden="true"></span>
         </button>
         <ul id="nav-menu" class="nav-menu">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#team">Our Team</a></li>
+          <li><a href="#services">Conditions</a></li>
+          <li><a href="#surgeon">Dr Wong</a></li>
+          <li><a href="#about">Approach</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a class="nav-cta" href="#contact">Book a Consultation</a></li>
+          <li><a class="nav-cta" href="#contact">Book a consultation</a></li>
         </ul>
       </nav>
     </div>
@@ -38,139 +48,179 @@
     <section id="top" class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Specialist Vascular &amp; Vein Care</p>
-          <h1>Expert care for your veins and arteries.</h1>
+          <p class="eyebrow">Vascular &amp; Vein Specialist · Richmond, Melbourne</p>
+          <h1>Considered care for your veins and arteries.</h1>
           <p class="lead">
-            The Victorian Vascular and Vein Institute, led by Dr Joy Wong,
-            provides comprehensive diagnosis and treatment of vascular
-            conditions in Richmond, Melbourne — combining advanced techniques
-            with compassionate, patient-focused care.
+            Led by vascular and vein surgeon Dr Joy Wong, the Victorian Vascular
+            and Vein Institute offers thorough diagnosis, clear explanations, and
+            a treatment plan shaped around you.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Book a Consultation</a>
-            <a class="btn btn-ghost" href="#services">Explore Services</a>
+            <a class="btn btn-primary" href="#contact">Book a consultation</a>
+            <a class="btn btn-ghost" href="#services">See conditions treated</a>
           </div>
+          <ul class="hero-trust" aria-label="At a glance">
+            <li>Female practitioner</li>
+            <li>Minimally invasive options</li>
+            <li>Personalised treatment plans</li>
+          </ul>
         </div>
-        <ul class="hero-highlights" aria-label="Highlights">
-          <li><strong>20+</strong><span>Years of combined experience</span></li>
-          <li><strong>Minimally</strong><span>Invasive procedures</span></li>
-          <li><strong>Same-week</strong><span>Consultations available</span></li>
-        </ul>
+
+        <figure class="hero-portrait">
+          <div class="portrait-frame">
+            <img src="images/dr-joy-wong.png" alt="Portrait of Dr Joy Wong, vascular and vein surgeon" width="522" height="732" />
+          </div>
+          <figcaption class="portrait-chip">
+            <strong>Dr Joy Wong</strong>
+            <span>Vascular &amp; Vein Surgeon</span>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- Services -->
     <section id="services" class="section">
       <div class="container">
-        <p class="eyebrow center">What We Treat</p>
-        <h2 class="section-title center">Our Services</h2>
-        <p class="section-intro center">
-          From common vein conditions to complex arterial disease, our team
-          offers a full range of diagnostic and surgical treatments.
-        </p>
+        <div class="section-head">
+          <p class="eyebrow">Conditions treated</p>
+          <h2 class="section-title">A full range of vascular &amp; vein care</h2>
+          <p class="section-intro">
+            From everyday vein concerns to complex arterial disease. The
+            diagrams below illustrate each condition — they're for guidance, not
+            a diagnosis.
+          </p>
+        </div>
         <div class="cards">
           <article class="card">
             <img class="card-img" src="images/conditions/varicose-veins.svg" alt="Illustration of varicose and spider veins in a leg" width="400" height="240" loading="lazy" />
-            <h3>Varicose &amp; Spider Veins</h3>
-            <p>Modern, minimally invasive treatments including sclerotherapy and endovenous laser therapy.</p>
+            <div class="card-body">
+              <h3>Varicose &amp; Spider Veins</h3>
+              <p>Modern, minimally invasive treatments including sclerotherapy and endovenous laser therapy.</p>
+            </div>
           </article>
           <article class="card">
             <img class="card-img" src="images/conditions/peripheral-artery-disease.svg" alt="Illustration of an artery narrowed by plaque" width="400" height="240" loading="lazy" />
-            <h3>Peripheral Artery Disease</h3>
-            <p>Diagnosis and treatment of narrowed arteries to restore healthy circulation and mobility.</p>
+            <div class="card-body">
+              <h3>Peripheral Artery Disease</h3>
+              <p>Diagnosis and treatment of narrowed arteries to restore healthy circulation and mobility.</p>
+            </div>
           </article>
           <article class="card">
             <img class="card-img" src="images/conditions/aortic-aneurysm.svg" alt="Illustration of an aortic aneurysm bulge" width="400" height="240" loading="lazy" />
-            <h3>Aortic Aneurysm Care</h3>
-            <p>Screening, monitoring and surgical repair of abdominal and thoracic aortic aneurysms.</p>
+            <div class="card-body">
+              <h3>Aortic Aneurysm Care</h3>
+              <p>Screening, monitoring and surgical repair of abdominal and thoracic aortic aneurysms.</p>
+            </div>
           </article>
           <article class="card">
             <img class="card-img" src="images/conditions/carotid-artery-disease.svg" alt="Illustration of a carotid artery narrowed by plaque" width="400" height="240" loading="lazy" />
-            <h3>Carotid Artery Disease</h3>
-            <p>Assessment and intervention to reduce stroke risk from narrowed carotid arteries.</p>
+            <div class="card-body">
+              <h3>Carotid Artery Disease</h3>
+              <p>Assessment and intervention to reduce stroke risk from narrowed carotid arteries.</p>
+            </div>
           </article>
           <article class="card">
             <img class="card-img" src="images/conditions/deep-vein-thrombosis.svg" alt="Illustration of a deep vein blocked by a blood clot" width="400" height="240" loading="lazy" />
-            <h3>Deep Vein Thrombosis</h3>
-            <p>Rapid evaluation and management of blood clots to prevent serious complications.</p>
+            <div class="card-body">
+              <h3>Deep Vein Thrombosis</h3>
+              <p>Rapid evaluation and management of blood clots to prevent serious complications.</p>
+            </div>
           </article>
           <article class="card">
             <img class="card-img" src="images/conditions/dialysis-access.svg" alt="Illustration of an arteriovenous fistula for dialysis access" width="400" height="240" loading="lazy" />
-            <h3>Dialysis Access</h3>
-            <p>Creation and maintenance of vascular access for patients requiring dialysis.</p>
+            <div class="card-body">
+              <h3>Dialysis Access</h3>
+              <p>Creation and maintenance of vascular access for patients requiring dialysis.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section section-alt">
-      <div class="container about-grid">
-        <div>
-          <p class="eyebrow">About the Clinic</p>
-          <h2 class="section-title">Focused entirely on vascular health.</h2>
+    <!-- Surgeon -->
+    <section id="surgeon" class="section section-paper">
+      <div class="container surgeon">
+        <figure class="surgeon-photo">
+          <img src="images/dr-joy-wong.png" alt="Dr Joy Wong" width="522" height="732" />
+        </figure>
+        <div class="surgeon-bio">
+          <p class="eyebrow">Your surgeon</p>
+          <h2 class="section-title">Dr Joy Wong</h2>
+          <p class="role">Vascular &amp; Vein Surgeon</p>
+          <blockquote class="pull-quote">
+            “Every patient deserves to understand what's happening and why —
+            before we talk about treatment.”
+          </blockquote>
           <p>
-            At Victorian Vascular and Vein Institute, we believe every patient deserves
-            clear answers and a treatment plan tailored to them. Our specialists
-            take the time to explain your condition and guide you through every
-            option — from lifestyle measures to advanced surgical care.
+            Dr Joy Wong is a vascular and vein surgeon practising at the
+            Victorian Vascular and Vein Institute in Richmond. She cares for the
+            full range of vascular and vein conditions, from varicose and spider
+            veins through to arterial disease.
           </p>
-          <ul class="check-list">
-            <li>Board-certified vascular surgeons</li>
-            <li>State-of-the-art diagnostic imaging on site</li>
-            <li>Personalised, evidence-based treatment plans</li>
-            <li>Convenient follow-up and ongoing support</li>
-          </ul>
-        </div>
-        <div class="about-panel">
-          <h3>Patient-first, every step</h3>
           <p>
-            We coordinate closely with your GP and other specialists to make
-            your care seamless — so you can focus on getting better.
+            Her approach is unhurried and thorough: she listens first, explains
+            each condition clearly, and tailors a plan to your needs and goals.
           </p>
-          <a class="btn btn-primary" href="#contact">Request an Appointment</a>
+          <a class="btn btn-primary" href="#contact">Book with Dr Wong</a>
         </div>
       </div>
     </section>
 
-    <!-- Team -->
-    <section id="team" class="section">
-      <div class="container">
-        <p class="eyebrow center">Your Surgeon</p>
-        <h2 class="section-title center">Meet Dr Joy Wong</h2>
-        <div class="surgeon">
-          <div class="surgeon-photo">
-            <img src="images/dr-joy-wong.png" alt="Portrait of Dr Joy Wong" width="522" height="732" />
-          </div>
-          <div class="surgeon-bio">
-            <h3>Dr Joy Wong</h3>
-            <p class="role">Vascular &amp; Vein Surgeon</p>
-            <p>
-              Dr Joy Wong is a specialist vascular and vein surgeon at the
-              Victorian Vascular and Vein Institute in Richmond. She provides
-              expert, patient-focused care across the full range of vascular and
-              vein conditions — from varicose and spider veins to complex
-              arterial disease.
-            </p>
-            <p>
-              Dr Wong takes the time to listen, explain each condition clearly,
-              and tailor a treatment plan to every patient's needs.
-            </p>
-            <a class="btn btn-primary" href="#contact">Book with Dr Wong</a>
-          </div>
+    <!-- Approach -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-lead">
+          <p class="eyebrow">Our approach</p>
+          <h2 class="section-title">Clear answers, and care that fits you.</h2>
+          <p>
+            We believe good vascular care starts with understanding. You'll get
+            the time to ask questions, a plain-English explanation of your
+            condition, and options that range from lifestyle measures to advanced
+            treatment.
+          </p>
         </div>
+        <ul class="feature-list">
+          <li>
+            <span class="feature-num">01</span>
+            <div>
+              <h3>Listen first</h3>
+              <p>A thorough consultation to understand your symptoms, history and concerns.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-num">02</span>
+            <div>
+              <h3>Diagnose carefully</h3>
+              <p>Vascular assessment and imaging to reach a clear, accurate diagnosis.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-num">03</span>
+            <div>
+              <h3>Treat thoughtfully</h3>
+              <p>A personalised plan, favouring minimally invasive options where suitable.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-num">04</span>
+            <div>
+              <h3>Support afterwards</h3>
+              <p>Follow-up and coordination with your GP so your care stays joined-up.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section section-navy">
       <div class="container contact-grid">
-        <div>
-          <p class="eyebrow light">Get in Touch</p>
+        <div class="contact-info">
+          <p class="eyebrow light">Get in touch</p>
           <h2 class="section-title light">Book a consultation</h2>
           <p class="contact-intro">
-            Call the clinic or send a message and our team will get back to you
-            promptly.
+            Call the clinic or send a message and we'll get back to you promptly.
+            A referral from your GP is helpful where you have one.
           </p>
           <ul class="contact-list">
             <li>
@@ -188,7 +238,7 @@
           </ul>
         </div>
         <form class="contact-form" action="#" method="post" onsubmit="return false;">
-          <p class="form-note">This form is a demo. Wire it to your email service or booking system.</p>
+          <p class="form-note">This form is a demo — connect it to your email or booking system to receive enquiries.</p>
           <div class="field">
             <label for="name">Full name</label>
             <input id="name" name="name" type="text" autocomplete="name" required />
@@ -205,19 +255,36 @@
             <label for="message">How can we help?</label>
             <textarea id="message" name="message" rows="4"></textarea>
           </div>
-          <button class="btn btn-primary btn-block" type="submit">Send Request</button>
+          <button class="btn btn-primary btn-block" type="submit">Send enquiry</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-brand"><span aria-hidden="true">✚</span> Victorian Vascular and Vein Institute</p>
-      <p class="footer-note">
-        © <span id="year"></span> Victorian Vascular and Vein Institute. This site is for
-        informational purposes and is not a substitute for medical advice.
-      </p>
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Victorian Vascular <span class="amp">&amp;</span> Vein Institute</p>
+        <p class="footer-note">
+          Specialist vascular and vein care with Dr Joy Wong, Richmond, Melbourne.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#services">Conditions</a>
+        <a href="#surgeon">Dr Wong</a>
+        <a href="#about">Approach</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <a href="tel:+61394295955">(03) 9429 5955</a>
+        <a href="https://maps.google.com/?q=158+Lennox+Street,+Richmond+VIC+3121" target="_blank" rel="noopener">158 Lennox Street,<br />Richmond VIC 3121</a>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© <span id="year"></span> Victorian Vascular and Vein Institute.</p>
+      <p>For information only — not a substitute for medical advice.</p>
     </div>
   </footer>
 
