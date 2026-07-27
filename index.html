@@ -96,6 +96,10 @@
             <div class="card-body">
               <h3>Varicose &amp; Spider Veins</h3>
               <p>Modern, minimally invasive treatments including sclerotherapy and endovenous laser therapy.</p>
+              <button type="button" class="card-cta" data-modal="ba-modal">
+                View before &amp; after
+                <span aria-hidden="true">→</span>
+              </button>
             </div>
           </article>
           <article class="card">
@@ -294,6 +298,20 @@
       </div>
     </section>
   </main>
+
+  <!-- Before/after modal -->
+  <div class="modal" id="ba-modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="ba-title">
+      <button type="button" class="modal-close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <p class="eyebrow">Varicose &amp; spider veins</p>
+      <h3 id="ba-title" class="modal-title">Before &amp; after treatment</h3>
+      <img class="modal-img" src="images/varicose-before-after.svg" alt="Before and after photographs of varicose vein treatment" />
+      <p class="modal-note">Results shown are for one patient and are not a guarantee — individual outcomes vary.</p>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="container footer-grid">

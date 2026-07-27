@@ -201,6 +201,39 @@ a:hover { color: var(--navy-700); }
 .card-body { padding: 1.4rem 1.6rem 1.7rem; }
 .card-body h3 { color: var(--navy); margin-bottom: 0.45rem; }
 .card-body p { color: var(--muted); margin: 0; font-size: 0.97rem; }
+.card-cta {
+  margin-top: 1rem; padding: 0; background: none; border: 0; cursor: pointer;
+  font-family: var(--sans); font-size: 0.92rem; font-weight: 600; color: var(--navy);
+  display: inline-flex; align-items: center; gap: 0.4rem;
+}
+.card-cta span { color: var(--brass); transition: transform 0.18s ease; }
+.card-cta:hover { color: var(--navy-700); }
+.card-cta:hover span { transform: translateX(3px); }
+
+/* ---------- Before/after modal ---------- */
+.modal { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 1.25rem; }
+.modal[hidden] { display: none; }
+.modal-backdrop { position: absolute; inset: 0; background: rgba(10, 36, 64, 0.6); backdrop-filter: blur(2px); }
+.modal-dialog {
+  position: relative; z-index: 1; background: #fff; border-radius: var(--radius-lg);
+  padding: clamp(1.4rem, 4vw, 2.2rem); max-width: 760px; width: 100%;
+  max-height: 90vh; overflow-y: auto; box-shadow: var(--shadow-md);
+  animation: modal-in 0.22s ease;
+}
+@keyframes modal-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.modal-close {
+  position: absolute; top: 0.9rem; right: 0.9rem; width: 40px; height: 40px;
+  display: grid; place-items: center; border: 0; border-radius: 50%; cursor: pointer;
+  background: var(--paper); color: var(--navy); transition: background 0.15s ease;
+}
+.modal-close:hover { background: var(--line); }
+.modal-title { font-family: var(--serif); font-weight: 500; font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 0 0 1.1rem; }
+.modal-img {
+  display: block; width: 100%; height: auto; border-radius: var(--radius);
+  border: 1px solid var(--line); background: #eef3fa;
+}
+.modal-note { margin: 1rem 0 0; font-size: 0.88rem; color: var(--muted); }
+body.modal-open { overflow: hidden; }
 
 /* ---------- Surgeon ---------- */
 .surgeon { display: grid; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
