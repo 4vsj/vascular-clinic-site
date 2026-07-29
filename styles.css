@@ -479,7 +479,9 @@ body.modal-open { overflow: hidden; }
   .nav-menu.open { display: flex; }
   .nav-menu li { padding: 0.5rem 0; }
   .nav-menu a.nav-cta { text-align: center; margin-top: 0.6rem; }
-  .hero-portrait { margin-top: 0.5rem; max-width: 340px; }
+  /* Stack: leave room below the portrait so the ECG line clears it */
+  .hero-portrait { margin-top: 0.5rem; margin-bottom: 3.5rem; max-width: 340px; }
+  .hero-pulse { height: 40px; }
 
   /* Conditions dropdown becomes an inline sublist on mobile */
   .dropdown-panel {
