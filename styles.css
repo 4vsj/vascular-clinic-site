@@ -348,7 +348,8 @@ body.modal-open { overflow: hidden; }
   border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
 }
 .surgeon-bio { max-width: 38rem; }
-.surgeon-bio .role { color: var(--brass); font-weight: 600; font-size: 0.95rem; margin: -0.2rem 0 1.4rem; }
+.surgeon-bio .role { color: var(--brass); font-weight: 600; font-size: 0.95rem; margin: -0.2rem 0 0.3rem; }
+.credentials { color: var(--muted); font-size: 0.9rem; letter-spacing: 0.02em; margin: 0 0 1.4rem; }
 .surgeon-bio p { color: var(--muted); }
 .surgeon-bio .btn { margin-top: 0.8rem; }
 .pull-quote {
@@ -537,10 +538,9 @@ body.modal-open { overflow: hidden; }
 }
 @keyframes ecg { from { stroke-dashoffset: 1200; } to { stroke-dashoffset: 0; } }
 
-/* Logo pulses gently on hover */
-.brand:hover .brand-mark svg path { animation: beat 0.9s ease; }
-@keyframes beat { 0%, 100% { transform: scaleY(1); } 40% { transform: scaleY(1.35); } }
-.brand-mark svg path { transform-origin: center; }
+/* Logo lifts gently on hover */
+.brand-mark { transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.brand:hover .brand-mark { transform: scale(1.08); }
 
 /* Card image zoom */
 .card-img { transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }

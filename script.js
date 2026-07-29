@@ -58,10 +58,9 @@ document.addEventListener('keydown', (e) => {
   document.querySelectorAll('.modal:not([hidden])').forEach(closeModal);
 });
 
-// Booking form
-// TODO: add the clinic's booking email between the quotes to enable email
-// delivery. While this is empty, the form asks patients to call instead.
-const CLINIC_EMAIL = '';
+// Booking form — submissions open the patient's email app addressed to the
+// clinic secretary with their details pre-filled. Change this to switch inbox.
+const CLINIC_EMAIL = 'secretaryvvvi@gmail.com';
 
 function showBookingStatus(form, message, isError) {
   const status = form.querySelector('.booking-status');

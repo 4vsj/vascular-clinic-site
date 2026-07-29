@@ -14,6 +14,7 @@ HEAD = """<!DOCTYPE html>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,9 +24,13 @@ HEAD = """<!DOCTYPE html>
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Victorian Vascular and Vein Institute home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" width="38" height="38">
-            <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M7 21 h6 l3 -8 l4 15 l3 -9 l2 3 h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg viewBox="0 0 40 40" width="40" height="40">
+            <circle cx="20" cy="20" r="18.5" fill="none" stroke="#b0894a" stroke-width="1.3"/>
+            <path d="M20 31 C 17 24, 15 19, 12.5 12.5" fill="none" stroke="#103a63" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M20 31 C 23 24, 25 19, 27.5 12.5" fill="none" stroke="#103a63" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M15.7 18.7 l-3.7 -1.3 M16.9 14.6 l-3.1 -2" fill="none" stroke="#b0894a" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M24.3 18.7 l3.7 -1.3 M23.1 14.6 l3.1 -2" fill="none" stroke="#b0894a" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="20" cy="31" r="1.9" fill="#b0894a"/>
           </svg>
         </span>
         <span class="brand-text">
@@ -110,6 +115,7 @@ HEAD = """<!DOCTYPE html>
       <div class="footer-col">
         <h4>Visit</h4>
         <a href="tel:+61394295955">(03) 9429 5955</a>
+        <a href="mailto:secretaryvvvi@gmail.com">secretaryvvvi@gmail.com</a>
         <a href="https://maps.google.com/?q=158+Lennox+Street,+Richmond+VIC+3121" target="_blank" rel="noopener">158 Lennox Street,<br />Richmond VIC 3121</a>
       </div>
     </div>

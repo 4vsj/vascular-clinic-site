@@ -30,17 +30,22 @@ edit the content there and re-run it, or edit the HTML files directly.
 ## Booking form
 
 Every "Book a consultation" button leads to a form asking for first name, last
-name, phone, email and preferred date. **The form is not yet connected to email.**
-To enable it, open `script.js` and set:
+name, phone, email and preferred date. On submit it opens the patient's email
+app with their details pre-filled, addressed to the clinic secretary
+(`secretaryvvvi@gmail.com`). The inbox is set in `script.js`:
 
 ```js
-const CLINIC_EMAIL = 'your-clinic-email@example.com';
+const CLINIC_EMAIL = 'secretaryvvvi@gmail.com';
 ```
 
-Once set, submitting the form opens the patient's email app with their details
-pre-filled, addressed to the clinic. Until then, the form asks patients to call.
-For a more automated option (no email app step), a service like Formspree can be
-wired in instead.
+For a more automated option (no email-app step — submissions arrive without the
+patient needing to press send), a service like Formspree can be wired in instead.
+
+## Contact details
+
+- Phone: (03) 9429 5955 · Fax: (03) 9923 6920
+- Bookings/enquiries: secretaryvvvi@gmail.com · Rooms: wongvascular@icloud.com
+- 158 Lennox Street, Richmond VIC 3121
 
 ## View locally
 
@@ -60,7 +65,5 @@ finishes building, it will be available at the URL shown in the repository's
 ## Things you may still want to add / check
 
 - Opening hours (not currently listed)
-- Real professional qualifications / fellowships for Dr Wong
-- A brand logo to replace the built-in ECG monogram, if preferred
 - **Review the FAQ answers** in `index.html` (`id="faq"`) — the Medicare/costs
   and location/parking wording is general; adjust it to your clinic's specifics.
