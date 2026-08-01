@@ -33,7 +33,8 @@ HEAD = """<!DOCTYPE html>
         </span>
         <span class="brand-text">
           <span class="brand-name">Victorian Vascular <span class="amp">&amp;</span> Vein</span>
-          <span class="brand-sub">Institute · Dr Joy Wong</span>
+          <span class="brand-inst">Institute</span>
+          <span class="brand-sub">Dr Joy Wong</span>
         </span>
       </a>
       <nav class="nav" aria-label="Primary">

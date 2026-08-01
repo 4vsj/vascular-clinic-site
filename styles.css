@@ -103,11 +103,15 @@ a:hover { color: var(--navy-700); }
 .brand { display: flex; align-items: center; gap: 0.7rem; color: var(--navy); }
 .brand:hover { color: var(--navy); }
 .brand-mark { color: var(--brass); display: grid; place-items: center; flex: none; }
-.brand-text { display: flex; flex-direction: column; line-height: 1.1; }
-.brand-name { font-family: var(--serif); font-size: 1.24rem; font-weight: 500; color: var(--navy); }
+.brand-text { display: flex; flex-direction: column; line-height: 1.02; }
+.brand-name { font-family: var(--serif); font-size: 1.22rem; font-weight: 500; color: var(--navy); }
+.brand-inst {
+  font-family: var(--serif); font-size: 1.05rem; font-weight: 500; color: var(--navy);
+  letter-spacing: 0.16em; margin-top: 2px;
+}
 .brand-sub {
-  font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em;
-  color: var(--muted); font-weight: 500; margin-top: 2px;
+  font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.16em;
+  color: var(--muted); font-weight: 600; margin-top: 4px;
 }
 
 .nav { display: flex; align-items: center; }
