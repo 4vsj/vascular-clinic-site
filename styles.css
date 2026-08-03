@@ -212,8 +212,8 @@ a:hover { color: var(--navy-700); }
 }
 .portrait-chip strong { font-family: var(--serif); font-weight: 500; font-size: 1.05rem; color: var(--navy); }
 .portrait-chip span { font-size: 0.8rem; color: var(--muted); }
-.hero-portrait { text-align: center; }
-.portrait-cta { display: inline-flex; margin-top: 2.2rem; }
+.hero-portrait { text-align: right; }
+.portrait-cta { display: inline-flex; margin-top: 1.5rem; padding: 0.6rem 1.15rem; font-size: 0.85rem; }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(3.75rem, 8vw, 6.75rem) 0; }
