@@ -14,14 +14,14 @@
   --brass-soft: #cba95f;
   --paper: #f7f4ee;      /* warm ivory for alternating sections */
   --line: #e7e1d6;       /* warm hairline */
-  --line-cool: #e3e9f1;
   --white: #ffffff;
 
   --radius: 8px;
-  --radius-lg: 16px;
-  --shadow-sm: 0 1px 2px rgba(20, 28, 40, 0.04), 0 10px 30px rgba(20, 28, 40, 0.05);
-  --shadow-md: 0 24px 60px rgba(14, 32, 58, 0.16);
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgba(20, 28, 40, 0.04), 0 6px 20px rgba(20, 28, 40, 0.05);
+  --shadow-md: 0 18px 44px rgba(14, 32, 58, 0.13);
   --container: 1140px;
+  --header-h: 76px;
 
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -29,6 +29,9 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+
+/* Offset in-page anchor jumps so targets clear the sticky header */
+section[id], .page-hero, #book, [id="top"] { scroll-margin-top: calc(var(--header-h) + 18px); }
 
 body {
   margin: 0;
@@ -86,8 +89,8 @@ a:hover { color: var(--navy-700); }
   padding: 0.9rem 1.7rem; border-radius: var(--radius); border: 1.5px solid transparent;
   cursor: pointer; transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.btn-primary { background: var(--navy); color: #fff; border-color: var(--navy); box-shadow: 0 8px 22px rgba(16, 58, 99, 0.20); }
-.btn-primary:hover { background: var(--navy-deep); border-color: var(--navy-deep); color: #fff; transform: translateY(-2px); box-shadow: 0 12px 28px rgba(16, 58, 99, 0.26); }
+.btn-primary { background: var(--navy); color: #fff; border-color: var(--navy); box-shadow: 0 4px 14px rgba(16, 58, 99, 0.16); }
+.btn-primary:hover { background: var(--navy-deep); border-color: var(--navy-deep); color: #fff; transform: translateY(-1px); box-shadow: 0 8px 20px rgba(16, 58, 99, 0.22); }
 .btn-ghost { background: transparent; color: var(--navy); border-color: rgba(16, 58, 99, 0.3); }
 .btn-ghost:hover { border-color: var(--navy); background: rgba(16, 58, 99, 0.04); transform: translateY(-2px); }
 .btn-block { width: 100%; }
@@ -255,7 +258,7 @@ a:hover { color: var(--navy-700); }
   content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
   background: var(--brass); transform: scaleX(0); transform-origin: left; transition: transform 0.25s ease;
 }
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--line); }
 .card:hover::after { transform: scaleX(1); }
 .card-img {
   display: block; width: 100%; height: auto; aspect-ratio: 400 / 240;
@@ -347,7 +350,7 @@ body.modal-open { overflow: hidden; }
 .booking-aside { position: static; }
 .booking-form {
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg);
-  padding: clamp(1.4rem, 3vw, 1.9rem); box-shadow: var(--shadow-md);
+  padding: clamp(1.4rem, 3vw, 1.9rem); box-shadow: var(--shadow-sm);
 }
 .booking-title { font-family: var(--serif); font-weight: 500; font-size: clamp(1.35rem, 3vw, 1.7rem); margin: 0 0 0.3rem; }
 .booking-sub { font-size: 0.92rem; color: var(--muted); margin: 0 0 1.3rem; }
@@ -447,11 +450,6 @@ body.modal-open { overflow: hidden; }
 .contact-list a, .contact-list span { color: #fff; font-size: 1.05rem; }
 .contact-list a:hover { color: var(--brass-soft); }
 
-.contact-form {
-  background: #fff; border-radius: var(--radius-lg); padding: 1.9rem; color: var(--ink);
-  box-shadow: var(--shadow-md);
-}
-.form-note { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.3rem; }
 .field { margin-bottom: 1.05rem; }
 .field label { display: block; font-weight: 600; font-size: 0.88rem; margin-bottom: 0.35rem; color: var(--navy); }
 .field input, .field textarea {
@@ -462,23 +460,6 @@ body.modal-open { overflow: hidden; }
 .field input:focus, .field textarea:focus {
   outline: none; border-color: var(--brass); box-shadow: 0 0 0 3px rgba(176, 137, 74, 0.16);
 }
-
-/* Call-to-book card */
-.call-card {
-  background: #fff; border-radius: var(--radius-lg); padding: 2.2rem 1.9rem;
-  color: var(--ink); box-shadow: var(--shadow-md); text-align: center;
-}
-.call-label {
-  text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.72rem;
-  font-weight: 600; color: var(--brass); margin: 0 0 0.5rem;
-}
-.call-number {
-  display: block; font-family: var(--serif); font-weight: 500;
-  font-size: clamp(2rem, 8vw, 2.6rem); color: var(--navy); letter-spacing: -0.01em;
-  margin-bottom: 1.3rem; line-height: 1.1;
-}
-.call-number:hover { color: var(--navy-700); }
-.call-note { margin: 1.3rem 0 0; font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--navy-deep); color: #a9bdd4; padding: clamp(2.5rem, 5vw, 3.5rem) 0 2rem; border-top: 1px solid rgba(255, 255, 255, 0.08); }
@@ -506,21 +487,19 @@ body.modal-open { overflow: hidden; }
   .footer-grid { grid-template-columns: 1.6fr 1fr 1fr; }
 }
 
-@media (max-width: 819px) {
+/* Collapse the nav to a menu button before it gets cramped */
+@media (max-width: 900px) {
   .nav-toggle { display: block; }
   .nav-menu {
-    position: absolute; top: 76px; left: 0; right: 0; display: none;
+    position: absolute; top: 100%; left: 0; right: 0; display: none;
     flex-direction: column; align-items: stretch; gap: 0; background: #fff;
     border-bottom: 1px solid var(--line); padding: 0.5rem 1.5rem 1.2rem; box-shadow: var(--shadow-md);
   }
   .nav-menu.open { display: flex; }
   .nav-menu li { padding: 0.5rem 0; }
   .nav-menu a.nav-cta { text-align: center; margin-top: 0.6rem; }
-  /* Stack: leave room below the portrait so the ECG line clears it */
-  .hero-portrait { margin-top: 0.5rem; margin-bottom: 3.5rem; max-width: 340px; }
-  .hero-pulse { height: 40px; }
 
-  /* Conditions dropdown becomes an inline sublist on mobile */
+  /* Conditions dropdown becomes an inline sublist inside the menu */
   .dropdown-panel {
     position: static; opacity: 1; visibility: visible; transform: none;
     box-shadow: none; border: 0; background: transparent;
@@ -528,6 +507,12 @@ body.modal-open { overflow: hidden; }
   .dropdown-row { grid-template-columns: 1fr; gap: 0; padding: 0.25rem 0 0 0.9rem; }
   .dropdown-row a { padding: 0.45rem 0.4rem; color: var(--muted); }
   .nav-drop-toggle .caret { display: none; }
+}
+
+@media (max-width: 819px) {
+  /* Stacked hero: leave room below the portrait so the ECG line clears it */
+  .hero-portrait { margin-top: 0.5rem; margin-bottom: 3.5rem; max-width: 340px; }
+  .hero-pulse { height: 40px; }
 }
 
 /* Mobile-first refinements: bigger tap targets, full-width actions */
@@ -564,7 +549,7 @@ body.modal-open { overflow: hidden; }
 .hero-copy > h1 { animation-delay: 0.14s; }
 .hero-copy > .lead { animation-delay: 0.26s; }
 .hero-copy > .hero-actions { animation-delay: 0.38s; }
-.hero-copy > .hero-trust { animation-delay: 0.48s; }
+.hero-copy > .hero-meta { animation-delay: 0.48s; }
 .hero-portrait { animation: rise 0.85s cubic-bezier(0.2, 0.7, 0.2, 1) 0.3s backwards; }
 
 /* Animated ECG pulse line (hero signature) */

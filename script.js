@@ -54,8 +54,20 @@ document.querySelectorAll('.modal').forEach((modal) => {
 });
 
 document.addEventListener('keydown', (e) => {
-  if (e.key !== 'Escape') return;
-  document.querySelectorAll('.modal:not([hidden])').forEach(closeModal);
+  const openEl = document.querySelector('.modal:not([hidden])');
+  if (!openEl) return;
+  if (e.key === 'Escape') { closeModal(openEl); return; }
+  if (e.key === 'Tab') {
+    // Keep keyboard focus within the open dialog
+    const focusables = openEl.querySelectorAll(
+      'a[href], button:not([disabled]), input, textarea, select, [tabindex]:not([tabindex="-1"])'
+    );
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
 });
 
 // Booking form — submissions open the patient's email app addressed to the

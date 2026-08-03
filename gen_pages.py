@@ -5,10 +5,11 @@ import os
 OUT = "/Users/marcusm/vascular-clinic-site"
 
 HEAD = """<!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a2440" />
   <meta name="description" content="{meta}" />
   <title>{title} — Victorian Vascular and Vein Institute</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,7 +46,7 @@ HEAD = """<!DOCTYPE html>
         <ul id="nav-menu" class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li class="has-dropdown">
-            <a href="index.html#services" class="nav-drop-toggle">Conditions <span class="caret" aria-hidden="true">&#9662;</span></a>
+            <a href="index.html#services" class="nav-drop-toggle" aria-haspopup="true">Conditions <span class="caret" aria-hidden="true">&#9662;</span></a>
             <div class="dropdown-panel">
               <div class="container dropdown-row">
                 <a href="varicose-veins.html">Varicose &amp; Spider Veins</a>
