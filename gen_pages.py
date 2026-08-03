@@ -11,7 +11,7 @@ HEAD = """<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0a2440" />
   <meta name="description" content="{meta}" />
-  <title>{title} — Victorian Vascular and Vein Institute</title>
+  <title>{title} | Victorian Vascular and Vein Institute</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -121,7 +121,7 @@ HEAD = """<!DOCTYPE html>
     </div>
     <div class="container footer-base">
       <p>© <span id="year"></span> Victorian Vascular and Vein Institute.</p>
-      <p>For information only — not a substitute for medical advice.</p>
+      <p>For information only. Not a substitute for medical advice.</p>
     </div>
   </footer>
 
@@ -187,7 +187,7 @@ def render_sections(sections):
 
 BA_FIGURE = """          <figure class="ba-figure">
             <img src="images/varicose-before-after.png" alt="A patient's lower leg before and after varicose vein treatment: prominent bulging veins on the left, smooth skin on the right" width="1446" height="1424" loading="lazy" />
-            <figcaption>Left: before treatment. Right: after treatment. Results shown are for one patient and are not a guarantee — individual outcomes vary.</figcaption>
+            <figcaption>Left: before treatment. Right: after treatment. Results shown are for one patient and are not a guarantee. Individual outcomes vary.</figcaption>
           </figure>"""
 
 
@@ -196,12 +196,12 @@ CONDITIONS = [
         "slug": "varicose-veins",
         "title": "Varicose &amp; Spider Veins",
         "eyebrow": "Vein condition",
-        "meta": "Varicose and spider vein treatment in Richmond, Melbourne with Dr Joy Wong — sclerotherapy, endovenous laser and more.",
+        "meta": "Varicose and spider vein treatment in Richmond, Melbourne with Dr Joy Wong: sclerotherapy, endovenous laser and more.",
         "img_alt": "Illustration of varicose and spider veins in a leg",
-        "lead": "Enlarged, twisted veins that show through the skin — usually in the legs. Most can be treated with modern, minimally invasive, walk-in walk-out procedures.",
+        "lead": "Enlarged, twisted veins that show through the skin, usually in the legs. Most can be treated with modern, minimally invasive, walk-in walk-out procedures.",
         "sections": [
             {"h": "Overview", "paras": [
-                "Varicose veins are swollen, rope-like veins that bulge beneath the skin, most often in the legs. They develop when the tiny one-way valves inside the veins weaken, allowing blood to pool instead of flowing back to the heart. Spider veins are the same problem on a smaller scale — fine red, blue or purple threads visible at the skin's surface.",
+                "Varicose veins are swollen, rope-like veins that bulge beneath the skin, most often in the legs. They develop when the tiny one-way valves inside the veins weaken, allowing blood to pool instead of flowing back to the heart. Spider veins are the same problem on a smaller scale: fine red, blue or purple threads visible at the skin's surface.",
                 "As well as their appearance, varicose veins can cause real discomfort and, left untreated, may lead to skin changes or ulcers over time."]},
             {"h": "Symptoms", "bullets": [
                 "Aching, heavy or tired legs, especially after standing",
@@ -220,14 +220,14 @@ CONDITIONS = [
             {"h": "Treatment options",
                 "paras": ["Vein stripping surgery is largely a thing of the past. Today most varicose veins are treated with minimally invasive techniques, usually in the clinic and without a general anaesthetic:"],
                 "bullets": [
-                    "Duplex ultrasound mapping — a painless scan to map the veins and plan treatment",
-                    "Endovenous laser ablation (EVLA) — heat closes the faulty vein from the inside",
-                    "Ultrasound-guided sclerotherapy — a solution is injected to close larger, deeper veins",
-                    "Microsclerotherapy — fine injections for smaller spider veins",
+                    "Duplex ultrasound mapping: a painless scan to map the veins and plan treatment",
+                    "Endovenous laser ablation (EVLA): heat closes the faulty vein from the inside",
+                    "Ultrasound-guided sclerotherapy: a solution injected to close larger, deeper veins",
+                    "Microsclerotherapy: fine injections for smaller spider veins",
                     "Compression stockings and lifestyle measures to support treatment"],
                 "html": BA_FIGURE},
             {"h": "What to expect", "paras": [
-                "Your visit begins with a consultation and a duplex ultrasound so Dr Wong can see exactly which veins are involved. She'll then explain your options and recommend a plan. Most treatments are minimally invasive with little downtime — many patients walk in and walk out the same day."]},
+                "Your visit begins with a consultation and a duplex ultrasound so Dr Wong can see exactly which veins are involved. She'll then explain your options and recommend a plan. Most treatments are minimally invasive with little downtime, and many patients walk in and walk out the same day."]},
         ],
     },
     {
@@ -236,7 +236,7 @@ CONDITIONS = [
         "eyebrow": "Arterial condition",
         "meta": "Diagnosis and treatment of peripheral artery disease (PAD) in Richmond, Melbourne with vascular surgeon Dr Joy Wong.",
         "img_alt": "Illustration of an artery narrowed by plaque",
-        "lead": "Narrowing of the arteries — usually in the legs — that reduces blood flow and can cause pain when walking. Early treatment protects your mobility and your limbs.",
+        "lead": "Narrowing of the arteries, usually in the legs, that reduces blood flow and can cause pain when walking. Early treatment protects your mobility and your limbs.",
         "sections": [
             {"h": "Overview", "paras": [
                 "Peripheral artery disease (PAD) develops when fatty deposits (plaque) build up inside the arteries that carry blood to your limbs, most commonly the legs. As the arteries narrow, less oxygen-rich blood reaches the muscles and tissues.",
@@ -253,10 +253,10 @@ CONDITIONS = [
             {"h": "Treatment options",
                 "paras": ["Treatment aims to relieve symptoms, improve circulation and reduce the risk of complications:"],
                 "bullets": [
-                    "Managing risk factors — stopping smoking and controlling diabetes, blood pressure and cholesterol",
+                    "Managing risk factors: stopping smoking and controlling diabetes, blood pressure and cholesterol",
                     "A structured walking and exercise program",
                     "Medications to improve blood flow and protect the arteries",
-                    "Angioplasty and stenting — opening a narrowed artery from the inside",
+                    "Angioplasty and stenting: opening a narrowed artery from the inside",
                     "Bypass surgery for more advanced disease"]},
             {"h": "What to expect", "paras": [
                 "Assessment usually includes checking your pulses, an ankle-brachial index (comparing blood pressure at the ankle and arm) and imaging of the arteries. Dr Wong will explain the findings and tailor a plan to protect your circulation and mobility."]},
@@ -268,25 +268,25 @@ CONDITIONS = [
         "eyebrow": "Arterial condition",
         "meta": "Screening, monitoring and repair of abdominal and thoracic aortic aneurysms with Dr Joy Wong, Richmond, Melbourne.",
         "img_alt": "Illustration of an aortic aneurysm bulge",
-        "lead": "A bulge in the wall of the aorta — the body's main artery. Often silent, but important to monitor and, when needed, repair before it becomes dangerous.",
+        "lead": "A bulge in the wall of the aorta, the body's main artery. Often silent, but important to monitor and, when needed, repair before it becomes dangerous.",
         "sections": [
             {"h": "Overview", "paras": [
                 "The aorta is the large artery that carries blood from the heart to the rest of the body. An aneurysm is a weakened, bulging section of its wall. Aneurysms can occur in the abdomen (abdominal aortic aneurysm) or the chest (thoracic aortic aneurysm).",
                 "Most aneurysms grow slowly and cause no symptoms, but a large or rapidly growing aneurysm can be at risk of rupture, which is a medical emergency. This is why screening and monitoring matter."]},
             {"h": "Symptoms", "bullets": [
-                "Often none — many aneurysms are found incidentally",
+                "Often none; many aneurysms are found incidentally",
                 "A pulsing sensation in the abdomen",
                 "Deep, constant abdominal or back pain",
-                "Sudden, severe pain — a possible rupture, requiring emergency care"]},
+                "Sudden, severe pain, which may signal a rupture and needs emergency care"]},
             {"h": "Causes &amp; risk factors", "bullets": [
                 "Smoking", "High blood pressure", "Atherosclerosis (hardening of the arteries)",
                 "Increasing age", "Being male", "Family history of aneurysm"]},
             {"h": "Treatment options",
                 "paras": ["The right approach depends on the size, location and growth of the aneurysm:"],
                 "bullets": [
-                    "Surveillance — regular ultrasound or CT scans to monitor small aneurysms",
+                    "Surveillance: regular ultrasound or CT scans to monitor small aneurysms",
                     "Managing blood pressure and stopping smoking to slow growth",
-                    "Endovascular repair (EVAR) — a stent-graft placed from inside the artery",
+                    "Endovascular repair (EVAR): a stent-graft placed from inside the artery",
                     "Open surgical repair for selected aneurysms"]},
             {"h": "What to expect", "paras": [
                 "If an aneurysm is found, Dr Wong will assess its size and risk and recommend either careful monitoring or repair. Many aneurysms simply need regular scans; repair is advised when the benefits outweigh the risks."]},
@@ -305,19 +305,19 @@ CONDITIONS = [
                 "Because carotid disease often has no symptoms until a stroke or warning event, identifying and managing it early is important."]},
             {"h": "Symptoms", "bullets": [
                 "Often none until a warning event occurs",
-                "Sudden weakness or numbness of the face, arm or leg — usually on one side",
+                "Sudden weakness or numbness of the face, arm or leg, usually on one side",
                 "Sudden trouble speaking or understanding speech",
                 "Sudden loss of vision in one eye",
-                "These are stroke warning signs — call 000 immediately"]},
+                "These are stroke warning signs; call 000 immediately"]},
             {"h": "Causes &amp; risk factors", "bullets": [
                 "Atherosclerosis (plaque build-up)", "Smoking", "High blood pressure",
                 "High cholesterol", "Diabetes", "Increasing age"]},
             {"h": "Treatment options",
                 "paras": ["Treatment focuses on preventing stroke by controlling risk factors and, where narrowing is significant, restoring safe blood flow:"],
                 "bullets": [
-                    "Medications — blood-thinning and cholesterol-lowering therapy",
+                    "Medications: blood-thinning and cholesterol-lowering therapy",
                     "Managing blood pressure and diabetes, and stopping smoking",
-                    "Carotid endarterectomy — surgery to remove the plaque",
+                    "Carotid endarterectomy: surgery to remove the plaque",
                     "Carotid stenting in selected cases"]},
             {"h": "What to expect", "paras": [
                 "Assessment usually starts with a carotid duplex ultrasound to measure any narrowing. Dr Wong will weigh your stroke risk against the benefits of treatment and recommend the safest approach for you."]},
@@ -332,13 +332,13 @@ CONDITIONS = [
         "lead": "A blood clot in a deep vein, usually in the leg. It needs prompt attention to relieve symptoms and prevent serious complications.",
         "sections": [
             {"h": "Overview", "paras": [
-                "Deep vein thrombosis (DVT) is a blood clot that forms in one of the deep veins, most often in the calf or thigh. It can cause pain and swelling, and if part of the clot breaks free it can travel to the lungs — a pulmonary embolism — which is potentially life-threatening.",
+                "Deep vein thrombosis (DVT) is a blood clot that forms in one of the deep veins, most often in the calf or thigh. It can cause pain and swelling, and if part of the clot breaks free it can travel to the lungs, causing a pulmonary embolism, which is potentially life-threatening.",
                 "Prompt diagnosis and treatment relieve symptoms and greatly reduce the risk of complications."]},
             {"h": "Symptoms", "bullets": [
                 "Swelling in one leg (or arm)",
                 "Pain or tenderness, often in the calf",
                 "Warmth and redness over the area",
-                "Sudden breathlessness or chest pain — a possible clot on the lung, requiring emergency care"]},
+                "Sudden breathlessness or chest pain, which may signal a clot on the lung and needs emergency care"]},
             {"h": "Causes &amp; risk factors", "bullets": [
                 "Long periods of immobility (long-haul travel, bed rest)",
                 "Recent surgery or injury",
@@ -362,17 +362,17 @@ CONDITIONS = [
         "eyebrow": "Vascular access",
         "meta": "Creation and maintenance of dialysis access (AV fistula and graft) with Dr Joy Wong, Richmond, Melbourne.",
         "img_alt": "Illustration of an arteriovenous fistula for dialysis access",
-        "lead": "Reliable, long-lasting access to the bloodstream for patients who need haemodialysis — created and maintained with careful surgical planning.",
+        "lead": "Reliable, long-lasting access to the bloodstream for patients who need haemodialysis, created and maintained with careful surgical planning.",
         "sections": [
             {"h": "Overview", "paras": [
-                "People receiving haemodialysis need a way to connect to the dialysis machine that allows a high flow of blood. The best long-term solution is usually an arteriovenous (AV) fistula — a connection made surgically between an artery and a nearby vein, which strengthens the vein over time so it can be used for dialysis.",
+                "People receiving haemodialysis need a way to connect to the dialysis machine that allows a high flow of blood. The best long-term solution is usually an arteriovenous (AV) fistula, a connection made surgically between an artery and a nearby vein, which strengthens the vein over time so it can be used for dialysis.",
                 "Good access is central to effective dialysis, so planning, creating and maintaining it well makes a real difference to patients' lives."]},
             {"h": "Types of access", "bullets": [
-                "AV fistula — the preferred, longest-lasting option, made from your own artery and vein",
-                "AV graft — a soft tube used when your veins aren't suitable for a fistula",
-                "Central venous catheter — for urgent or temporary access"]},
+                "AV fistula: the preferred, longest-lasting option, made from your own artery and vein",
+                "AV graft: a soft tube used when your veins aren't suitable for a fistula",
+                "Central venous catheter: for urgent or temporary access"]},
             {"h": "What's involved", "paras": [
-                "Creating a fistula is usually a day procedure. Over the following weeks the vein 'matures' — enlarging and strengthening — until it's ready to use for dialysis."]},
+                "Creating a fistula is usually a day procedure. Over the following weeks the vein 'matures', enlarging and strengthening, until it's ready to use for dialysis."]},
             {"h": "Keeping your access healthy", "bullets": [
                 "Regular checks to make sure the access is flowing well",
                 "Treating any narrowing or blockage early, often with a minimally invasive procedure",

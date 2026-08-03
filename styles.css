@@ -192,7 +192,7 @@ a:hover { color: var(--navy-700); }
   content: ""; width: 1px; height: 12px; background: var(--line); margin: 0 1.1rem;
 }
 
-/* Hero portrait — the signature element */
+/* Hero portrait: the signature element */
 .hero-portrait { position: relative; margin: 0; justify-self: center; max-width: 380px; width: 100%; }
 .portrait-frame { position: relative; }
 .portrait-frame::before {

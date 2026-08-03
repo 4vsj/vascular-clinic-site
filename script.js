@@ -70,7 +70,7 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// Booking form — submissions open the patient's email app addressed to the
+// Booking form: submissions open the patient's email app addressed to the
 // clinic secretary with their details pre-filled. Change this to switch inbox.
 const CLINIC_EMAIL = 'secretaryvvvi@gmail.com';
 
@@ -105,7 +105,7 @@ window.addEventListener('scroll', () => {
   toTop.classList.toggle('show', window.scrollY > 500);
 }, { passive: true });
 
-// Scroll reveal (progressive enhancement — content is visible without JS)
+// Scroll reveal (progressive enhancement; content is visible without JS)
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if (!reduceMotion && 'IntersectionObserver' in window) {
   const selectors = [
@@ -153,14 +153,14 @@ document.querySelectorAll('.booking-form').forEach((form) => {
         'Preferred date: ' + (data.get('preferred_date') || 'Not specified'),
       ];
       if (data.get('condition')) lines.push('Regarding: ' + data.get('condition'));
-      const subject = encodeURIComponent('Consultation request — ' + fullName);
+      const subject = encodeURIComponent('Consultation request from ' + fullName);
       const body = encodeURIComponent(lines.join('\n'));
       window.location.href = 'mailto:' + CLINIC_EMAIL + '?subject=' + subject + '&body=' + body;
       showBookingStatus(form, 'Opening your email app to send the request. If nothing happens, please call (03) 9429 5955.', false);
     } else {
       showBookingStatus(
         form,
-        'Thanks ' + (first || 'for your interest') + '. Online booking isn’t connected yet — please call (03) 9429 5955 to confirm your appointment.',
+        'Thanks ' + (first || 'for your interest') + '. Online booking isn’t connected yet. Please call (03) 9429 5955 to confirm your appointment.',
         false
       );
     }
