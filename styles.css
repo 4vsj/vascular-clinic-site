@@ -194,6 +194,7 @@ a:hover { color: var(--navy-700); }
 
 /* Hero portrait: the signature element */
 .hero-portrait { position: relative; margin: 0; justify-self: center; max-width: 380px; width: 100%; }
+.portrait-fig { position: relative; margin: 0; }
 .portrait-frame { position: relative; }
 .portrait-frame::before {
   content: ""; position: absolute; inset: 18px -18px -18px 18px;
@@ -211,6 +212,8 @@ a:hover { color: var(--navy-700); }
 }
 .portrait-chip strong { font-family: var(--serif); font-weight: 500; font-size: 1.05rem; color: var(--navy); }
 .portrait-chip span { font-size: 0.8rem; color: var(--muted); }
+.hero-portrait { text-align: center; }
+.portrait-cta { display: inline-flex; margin-top: 2.2rem; }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(3.75rem, 8vw, 6.75rem) 0; }
